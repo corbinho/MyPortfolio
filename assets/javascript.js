@@ -30,6 +30,9 @@ $(document).keydown(function (e) {
             var touchingResume = collision(resumeInfo1, mario1);
             var touchingProjects = collision(projectBox, mario1);
             if (touchingResume) {
+                $("#resumeBox").finish().animate({
+                    top: "-=20"
+                }, 100);
                 console.log("theyre touchingResume")
                 resumeInfo.show();
                 // welcomeToMyPage.hide()

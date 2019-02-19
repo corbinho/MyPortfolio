@@ -68,23 +68,34 @@
 }
 
 #projectBox {
-    height: 6%;
-    width: 4%;
-    margin-left: 25%;
-
+    height: 70%;
+    width: 30%;
+    float: right;
 }
 
 #resumeBox {
-    height: 6%;
-    width: 4%;
-    margin-left: 15%;
+    height: 70%;
+    width: 30%;
+    float: right;
+}
+
+#aboutMeBox {
+    height: 70%;
+    width: 30%;
+    float: right;
+}
+
+#socialBox {
+    height: 70%;
+    width: 30%;
+    float: right;
 }
 
 #portfolioLinks {
     position: fixed;
     padding-right: 0px;
     padding-left: 0px;
-    left: 38%;
+    left: 20%;
     top: 40%;
 }
 
