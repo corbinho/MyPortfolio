@@ -121,6 +121,15 @@
         border-style: solid;
         border-color: black
     }
+
+    #aboutMeLinks{
+        position: fixed;
+        left: 7%;
+        top: 2%;
+        border-style: solid;
+        border-color: black;
+        width: 65%;
+    }
 }
 
 @media screen and (max-width:768px) {
@@ -237,6 +246,14 @@
         margin-top: 5%;
     }
 
+    #aboutMeLinks{
+        position: fixed;
+        left: 7%;
+        top: 2%;
+        border-style: solid;
+        border-color: black;
+        width: 65%;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -351,6 +368,14 @@
     #welcomeToMyPage {
         margin-top: 5%;
     }
+    #aboutMeLinks{
+        position: fixed;
+        left: 7%;
+        top: 2%;
+        border-style: solid;
+        border-color: black;
+        width: 68%;
+    }
 
 }
 
@@ -358,4 +383,9 @@
     .break2{
         display: block
     }
+}
+
+.aboutMeText{
+    font-family: 'Courier New', Courier, monospace;
+    text-indent: 4%;
 }

@@ -7,8 +7,11 @@ var resumeInfo1 = $("#resumeBox");
 var mario1 = $("#mario");
 var portfolioLinks = $("#portfolioLinks");
 portfolioLinks.hide()
+var aboutMeLinks = $("#aboutMeLinks");
+aboutMeLinks.hide();
 var projectBox = $("#projectBox");
 var socialBox = $("#socialBox")
+var aboutMeBox = $("#aboutMeBox")
 
 $(document).ready(function () {
     resumeInfo.hide();
@@ -51,6 +54,7 @@ $(document).keydown(function (e) {
                 resumeInfo.hide()
                 welcomeToMyPage.show()
                 socialLinks.hide()
+                aboutMeLinks.hide()
             }
             break;
         case 38: //up arrow
@@ -63,6 +67,7 @@ $(document).keydown(function (e) {
             var touchingResume = collision(resumeInfo1, mario1);
             var touchingProjects = collision(projectBox, mario1);
             var touchingSocials = collision(socialBox, mario1);
+            var touchingAboutMe = collision(aboutMeBox, mario1)
             if (touchingResume) {
                 console.log("theyre touchingResume")
                 resumeInfo.show();
@@ -74,13 +79,19 @@ $(document).keydown(function (e) {
             } else if(touchingSocials){
                 console.log("theyre touching socials");
                 socialLinks.show();
-            }
+            } else if(touchingAboutMe){
+                console.log("theyre touching aboutMe");
+                aboutMeLinks.show();
+            } 
+
+
             else {
                 portfolioLinks.hide()
                 welcomeToMyPage.show()
                 resumeInfo.hide()
                 welcomeToMyPage.show()
-                socialLinks.hide()
+                socialLinks.hide();
+                aboutMeLinks.hide()
             }
             break;
         case 39: //right arrow key
@@ -103,7 +114,8 @@ $(document).keydown(function (e) {
                 welcomeToMyPage.show()
                 resumeInfo.hide()
                 welcomeToMyPage.show()
-                socialLinks.hide()
+                socialLinks.hide();
+                aboutMeLinks.hide()
             }
             break;
         // case 40: //bottom arrow key
