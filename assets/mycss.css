@@ -6,11 +6,7 @@
         position: absolute;
     }
 
-    #break{
-        height: 5%;
-        display: block;
-        margin: 10px;
-    }
+   
 
     #backgroundimg {
 
@@ -38,7 +34,7 @@
     #myResume {
         position: fixed;
         left: 5%;
-        top: 50%;
+        top: 51%;
         border-style: solid;
         border-color: black
     }
@@ -112,7 +108,7 @@
         padding-right: 0px;
         padding-left: 0px;
         left: 37%;
-        top: 35%;
+        top: 33%;
         border-style: solid;
         border-color: black
     }
@@ -142,8 +138,8 @@
 } */
 
     #mario {
-        height: 13%;
-        width: 9%;
+        height: 17%;
+        width: 12%;
         position: fixed;
         left: 10px;
         top: 78%
@@ -154,7 +150,7 @@
     #myResume {
         position: fixed;
         left: 5%;
-        top: 50%;
+        top: 51%;
         border-style: solid;
         border-color: black
         
@@ -223,7 +219,7 @@
         padding-right: 0px;
         padding-left: 0px;
         left: 37%;
-        top: 35%;
+        top: 33%;
         border-style: solid;
         border-color: black
     }
@@ -270,7 +266,7 @@
     #myResume {
         position: fixed;
         left: 5%;
-        top: 50%;
+        top: 51%;
         border-style: solid;
         border-color: black
         
@@ -338,7 +334,7 @@
         padding-right: 0px;
         padding-left: 0px;
         left: 20%;
-        top: 35%;
+        top: 33%;
         border-style: solid;
         border-color: black
     }
@@ -348,3 +344,10 @@
     }
 
 }
+
+@media screen and (max-width:1441px) and (min-width: 1025px) {
+    .break2{
+        display: block
+    }
+}
+
