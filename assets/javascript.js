@@ -1,11 +1,14 @@
 var resumeInfo = $("#myResume");
 resumeInfo.hide();
+var socialLinks = $("#socialLinks");
+socialLinks.hide()
 var welcomeToMyPage = $("#welcomeToMyPage");
 var resumeInfo1 = $("#resumeBox");
 var mario1 = $("#mario");
 var portfolioLinks = $("#portfolioLinks");
 portfolioLinks.hide()
 var projectBox = $("#projectBox");
+var socialBox = $("#socialBox")
 
 $(document).ready(function () {
     resumeInfo.hide();
@@ -29,6 +32,7 @@ $(document).keydown(function (e) {
             $("#mario").addClass('flipped');
             var touchingResume = collision(resumeInfo1, mario1);
             var touchingProjects = collision(projectBox, mario1);
+            var touchingSocials = collision(socialBox, mario1);
             if (touchingResume) {
                 console.log("theyre touchingResume")
                 resumeInfo.show();
@@ -37,11 +41,16 @@ $(document).keydown(function (e) {
                 console.log("theyre touching projects")
                 portfolioLinks.show();
                 // welcomeToMyPage.hide()
-            } else {
+            } else if(touchingSocials){
+                console.log("theyre touching socials");
+                socialLinks.show();
+            }
+            else {
                 portfolioLinks.hide()
                 welcomeToMyPage.show()
                 resumeInfo.hide()
                 welcomeToMyPage.show()
+                socialLinks.hide()
             }
             break;
         case 38: //up arrow
@@ -53,6 +62,7 @@ $(document).keydown(function (e) {
             }, 500);
             var touchingResume = collision(resumeInfo1, mario1);
             var touchingProjects = collision(projectBox, mario1);
+            var touchingSocials = collision(socialBox, mario1);
             if (touchingResume) {
                 console.log("theyre touchingResume")
                 resumeInfo.show();
@@ -61,11 +71,16 @@ $(document).keydown(function (e) {
                 console.log("theyre touching projects")
                 portfolioLinks.show();
                 // welcomeToMyPage.hide()
-            } else {
+            } else if(touchingSocials){
+                console.log("theyre touching socials");
+                socialLinks.show();
+            }
+            else {
                 portfolioLinks.hide()
                 welcomeToMyPage.show()
                 resumeInfo.hide()
                 welcomeToMyPage.show()
+                socialLinks.hide()
             }
             break;
         case 39: //right arrow key
@@ -88,6 +103,7 @@ $(document).keydown(function (e) {
                 welcomeToMyPage.show()
                 resumeInfo.hide()
                 welcomeToMyPage.show()
+                socialLinks.hide()
             }
             break;
         // case 40: //bottom arrow key
