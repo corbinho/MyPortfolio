@@ -64,29 +64,38 @@
         font-family: myFirstFont
     }
 
+    #boxesRow {
+        position: fixed;
+        bottom: 25%
+    }
 
     #projectBox {
         height: 70%;
         width: 30%;
         float: right;
+        position: relative;
+        bottom: 0%;
     }
 
     #resumeBox {
         height: 70%;
         width: 30%;
         float: right;
+        position: relative;
     }
 
     #aboutMeBox {
         height: 70%;
         width: 30%;
         float: right;
+        position: relative;
     }
 
     #socialBox {
         height: 70%;
         width: 30%;
         float: right;
+        position: relative;
     }
 
     #portfolioLinks {
