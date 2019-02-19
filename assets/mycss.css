@@ -26,7 +26,112 @@
         width: 9%;
         position: fixed;
         left: 10px;
-        top: 550px
+        top: 78%
+    }
+
+    #myResume {
+        position: fixed;
+        left: 65px;
+        top: 15px;
+        height: 500px;
+        width: 400px;
+        border-style: solid;
+        border-color: black
+    }
+
+    .flipped {
+        transform: scale(-1, 1);
+        -moz-transform: scale(-1, 1);
+        -webkit-transform: scale(-1, 1);
+        -o-transform: scale(-1, 1);
+        -khtml-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+    }
+
+    /* 
+#resumeBox{
+    height: 10px;
+    width: 10px;
+    position: fixed
+} */
+
+    @font-face {
+        font-family: myFirstFont;
+        src: url(./Super\ Mario\ Bros.ttf);
+    }
+
+    p {
+        font-family: myFirstFont
+    }
+
+
+#projectBox {
+    height: 70%;
+    width: 30%;
+    float: right;
+}
+
+#resumeBox {
+    height: 70%;
+    width: 30%;
+    float: right;
+}
+
+#aboutMeBox {
+    height: 70%;
+    width: 30%;
+    float: right;
+}
+
+#socialBox {
+    height: 70%;
+    width: 30%;
+    float: right;
+}
+
+#portfolioLinks {
+    position: fixed;
+    padding-right: 0px;
+    padding-left: 0px;
+    left: 20%;
+    top: 40%;
+}
+
+#welcomeToMyPage{
+    margin-top: 5%;
+}
+
+}
+
+@media screen and (max-width:768px) {
+
+    #container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    #backgroundimg {
+
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    /* body {
+    background-image: url('background.jpg');
+    background-size: 90%;
+    width: 100%
+} */
+
+    #mario {
+        height: 13%;
+        width: 9%;
+        position: fixed;
+        left: 10px;
+        top: 78%
     }
 
     
@@ -65,30 +170,30 @@
     p {
         font-family: myFirstFont
     }
-}
+
 
 #projectBox {
     height: 70%;
     width: 30%;
-    float: right;
+    float: left;
 }
 
 #resumeBox {
     height: 70%;
     width: 30%;
-    float: right;
+    float: left;
 }
 
 #aboutMeBox {
     height: 70%;
     width: 30%;
-    float: right;
+    float: left;
 }
 
 #socialBox {
     height: 70%;
     width: 30%;
-    float: right;
+    float: left;
 }
 
 #portfolioLinks {
@@ -101,4 +206,6 @@
 
 #welcomeToMyPage{
     margin-top: 5%;
+}
+
 }
