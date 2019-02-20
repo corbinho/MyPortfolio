@@ -62,7 +62,7 @@ $(document).keydown(function (e) {
                 top: "-=60"
             }, 100);
             $("#mario").finish().animate({
-                top: "+=60"
+                top: "78%"
             }, 500);
             var touchingResume = collision(resumeInfo1, mario1);
             var touchingProjects = collision(projectBox, mario1);
