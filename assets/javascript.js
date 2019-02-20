@@ -44,11 +44,10 @@ $(document).keydown(function (e) {
                 console.log("theyre touching projects")
                 portfolioLinks.show();
                 // welcomeToMyPage.hide()
-            } else if(touchingSocials){
+            } else if (touchingSocials) {
                 console.log("theyre touching socials");
                 socialLinks.show();
-            }
-            else {
+            } else {
                 portfolioLinks.hide()
                 welcomeToMyPage.show()
                 resumeInfo.hide()
@@ -76,16 +75,13 @@ $(document).keydown(function (e) {
                 console.log("theyre touching projects")
                 portfolioLinks.show();
                 // welcomeToMyPage.hide()
-            } else if(touchingSocials){
+            } else if (touchingSocials) {
                 console.log("theyre touching socials");
                 socialLinks.show();
-            } else if(touchingAboutMe){
+            } else if (touchingAboutMe) {
                 console.log("theyre touching aboutMe");
                 aboutMeLinks.show();
-            } 
-
-
-            else {
+            } else {
                 portfolioLinks.hide()
                 welcomeToMyPage.show()
                 resumeInfo.hide()
@@ -118,27 +114,7 @@ $(document).keydown(function (e) {
                 aboutMeLinks.hide()
             }
             break;
-        // case 40: //bottom arrow key
-        //     $("#mario").finish().animate({
-        //         top: "+=20"
-        //     }, 100);
-        //     var touchingResume = collision(resumeInfo1, mario1);
-        //     var touchingProjects = collision(projectBox, mario1);
-        //     if (touchingResume) {
-        //         console.log("theyre touchingResume")
-        //         resumeInfo.show();
-                // welcomeToMyPage.hide()
-        //     } else if (touchingProjects) {
-        //         console.log("theyre touching projects")
-        //         portfolioLinks.show();
-                // welcomeToMyPage.hide()
-        //     } else {
-        //         portfolioLinks.hide()
-        //         welcomeToMyPage.show()
-        //         resumeInfo.hide()
-        //         welcomeToMyPage.show()
-        //     }
-        //     break;
+
     }
 })
 
@@ -159,19 +135,3 @@ function collision($div1, $div2) {
     if (b1 < y2 || y1 > b2 || r1 < x2 || x1 > r2) return false;
     return true;
 }
-
-// function checkResumeTouch() {
-//     var resumeInfo = $("#myResume");
-//     var mario = $("#mario");
-//     var marioBoxLeft = mario.css('left');
-//     var marioBoxUpper = mario.css('top');
-
-//     console.log("mario position " + marioBoxLeft + "and" + marioBoxUpper)
-//     if (marioBoxLeft === "190px" && marioBoxUpper === "542px") {
-//         console.log("overlap")
-
-//         resumeInfo.show();
-//     } else {
-//         resumeInfo.hide()
-//     }
-// }
