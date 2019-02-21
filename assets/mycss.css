@@ -114,10 +114,10 @@
     #aboutMeLinks {
         position: fixed;
         left: 7%;
-        top: 2%;
+        top: 0%;
         border-style: solid;
         border-color: black;
-        width: 65%;
+        width: 68%;
     }
 }
 
@@ -228,10 +228,10 @@
     #aboutMeLinks {
         position: fixed;
         left: 7%;
-        top: 2%;
+        top: 0%;
         border-style: solid;
         border-color: black;
-        width: 65%;
+        width: 67%;
     }
 }
 
@@ -341,10 +341,10 @@
     #aboutMeLinks {
         position: fixed;
         left: 7%;
-        top: 2%;
+        top: 0%;
         border-style: solid;
         border-color: black;
-        width: 68%;
+        width: 69%;
     }
 
 }
