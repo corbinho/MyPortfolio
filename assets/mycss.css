@@ -27,7 +27,7 @@
 
     #myResume {
         position: fixed;
-        left: 5%;
+        left: 50%;
         top: 51%;
         border-style: solid;
         border-color: black
@@ -117,7 +117,7 @@
         top: 0%;
         border-style: solid;
         border-color: black;
-        width: 68%;
+        width: 78%;
     }
 }
 
@@ -152,7 +152,7 @@
 
     #myResume {
         position: fixed;
-        left: 5%;
+        left: 50%;
         top: 51%;
         border-style: solid;
         border-color: black
@@ -231,7 +231,7 @@
         top: 0%;
         border-style: solid;
         border-color: black;
-        width: 67%;
+        width: 78%;
     }
 }
 
@@ -265,7 +265,7 @@
 
     #myResume {
         position: fixed;
-        left: 5%;
+        left: 50%;
         top: 51%;
         border-style: solid;
         border-color: black
@@ -344,7 +344,7 @@
         top: 0%;
         border-style: solid;
         border-color: black;
-        width: 69%;
+        width: 78%;
     }
 
 }
